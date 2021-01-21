@@ -4,16 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>네이버 리스트</title>
 <style type="text/css">
-body {
-	font-size:12px;
-	margin:10px;
-	padding:10px;
-}
+* { margin:0; padding: 0; }
+body { font-size:12px; }
 
 
 ul.bullet {
 	list-style-type:none;
-	margin:10px 0 0 0;
+	margin:100px auto 0 auto;
 	padding:0;
 	border:1px solid #999;
 	border-radius:10px;
@@ -23,27 +20,34 @@ ul.bullet {
 }
 
 ul.bullet li {
-	width:250px;
+	border:1px solid #f00;
 	height:40px;
-	margin:10px 0 0 0;
-	padding:0 0 0 30px;
-	background-image: url(images/bullet1.gif);
-	background-repeat: no-repeat;
-	background-position: 10px top;	
-	
 }
 
+ul.bullet li em, ul.bullet li span{ 
+	display:block; 
+	float:left 
+}
+
+ul.bullet li em{
+    min-width: 16px;
+    margin: 2px 8px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #404040;
+    text-align: center;
+}
 </style>
 </head>
 
 <body>
 <ul  class="bullet">
-    <li> 1. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 2. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 3. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 4. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 5. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
-    <li> 6. 리스트의 bullet 을 백그라운드로 사용가능합니다.</li>
+    <li><em>1</em><span>리스트의 bullet 을 백그라운드로 사용가능합니다.</span></li>
+    <li><em>2</em><span>리스트의 bullet 을 백그라운드로 사용가능합니다.</span></li>
+    <li><em>3</em><span>리스트의 bullet 을 백그라운드로 사용가능합니다.</span></li>
+    <li><em>4</em><span>리스트의 bullet 을 백그라운드로 사용가능합니다.</span></li>
+    <li><em>5</em><span>리스트의 bullet 을 백그라운드로 사용가능합니다.</span></li>
+    <li><em>6</em><span>리스트의 bullet 을 백그라운드로 사용가능합니다.</span></li>
 </ul>
 
 
