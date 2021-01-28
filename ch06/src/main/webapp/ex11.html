@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.addEventListener('load', function(){
+	let header = document.getElementById('header');
+	
+	let clickEventListener = function(){
+		console.log('click1');
+	}
+	
+	header.addEventListener('click', clickEventListener);
+	header.addEventListener('click', function(){
+		console.log('click2');
+	});
+	
+	// Listener 제거
+	header.removeEventListener('click', clickEventListener);
+});
+</script>
+</head>
+<body>
+	<h1 id='header'>Click!</h1>
+</body>
+</html>
